@@ -1,0 +1,17 @@
+[package]
+name = "mehisha"
+version = "0.1.0"
+authors = ["Douman <douman@gmx.se>"]
+description = "Simple async runtime"
+readme = "README.md"
+repository = "https://github.com/DoumanAsh/mehisha"
+license = "BSL-1.0"
+edition = "2018"
+include = [
+    "**/*.rs",
+    "Cargo.toml",
+    "README.md"
+]
+
+[target.'cfg(windows)'.dependencies]
+miow = "0.3"
